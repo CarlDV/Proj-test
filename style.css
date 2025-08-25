@@ -1,63 +1,76 @@
+.wrapper {
+    padding: 2%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
 body {
-    background: linear-gradient(45deg, red, rgb(255, 165, 0), cyan, blue, purple);
-    animation: bg 15s ease infinite;
-    background-size: 400% 400%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background: rgb(0, 0, 0);
-    padding: 15px;
+    background-color: black;
+    padding: 20px;
     border-radius: 15px;
-    text-align: right;
     position: sticky;
-    top: 0;
+    top: 5px;
     z-index: 1000;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 15px auto;
-    padding-right: 15px;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    display: inline-block;
-    transition: 1s ease, transform 0.2s ease;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 nav a:hover {
-    color: yellow;
     transform: scale(1.2);
+    color: aqua;
 }
 
 .cont {
-    background-color: rgba(0, 0, 0, 0.774);
+    background-color: black;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.cont h2 {
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 6px;
+    padding: 1%;
+}
+
+.cont p {
     color: white;
-    border-radius: 6px;
+    padding: 10px;
 }
 
-h2 {
-    padding: 1%;
-    background-color: rgb(126, 122, 114);
+.cont2 {
+    background-color: black;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.cont2 h2 {
+    background-color: rgba(255, 255, 255, 0.671);
     border-radius: 6px;
-    color: rgb(2, 2, 2);
-    font-size: 30px;
-    width: 20%;
+    padding: 1%;
+}
+
+.cont2 p {
+    color: white;
+    padding: 10px;
+}
+
+h3 {
     text-align: center;
-}
-
-p {
-    padding: 1%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-@keyframes bg {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; } 
-}
-
-audio {
-    display: none;
+    padding-top: 500%;
 }
